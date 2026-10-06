@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve exported documents and mechanical models byte-for-byte.
+*.pdf binary
+*.step binary
+*.STEP binary

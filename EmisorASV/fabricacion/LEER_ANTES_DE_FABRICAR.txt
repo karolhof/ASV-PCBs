@@ -1,0 +1,19 @@
+EMISOR ASV - PCB de UNA CARA
+
+95 x 80 mm. FR4 1,6 mm; cobre 35 um SOLO B.Cu.
+NO fabricar F.Cu. Vista_puentes es una guia de alambres.
+No hay vias; continuidad sin depender de barriles metalizados.
+Taladros combinados en milimetros; se pueden fabricar no metalizados.
+
+Senales 0,5 mm; alimentacion 0,7 mm; algunas ramas GND 0,5 mm.
+W1/W2: alambre AISLADO arriba, conductor 0,35-0,45 mm;
+taladro 0,6 mm y pad 1 mm. Instalar antes del DevKit.
+Solo LoRa SMD por debajo; resto THT por arriba.
+ESP32 en dos zocalos hembra 1x19 de al menos 8 mm de altura.
+J4 y JP2 NO MONTAR con antena de resorte. ANT no va a GND.
+Alimentacion exclusivamente por USB del DevKit (celular host OTG).
+NO aplicar bateria de 12 V; no hay entrada de bateria.
+
+PDF de impresion: 100 %, sin ajuste; comprobar regla de 100 mm.
+Validacion software: ERC/DRC 0; conexiones y paridad de esquema 0.
+Falta medir tensiones y probar transmision en el prototipo.

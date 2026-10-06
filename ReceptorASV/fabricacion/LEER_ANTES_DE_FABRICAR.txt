@@ -1,0 +1,20 @@
+RECEPTOR ASV - PCB de UNA CARA
+
+120 x 90 mm. FR4 de 1,6 mm; cobre 35 um, solo cara B.Cu.
+NO fabricar F.Cu. La copia Vista_puentes es una guia de alambres.
+No hay vias; los agujeros pueden ser no metalizados: la continuidad
+no depende de barriles de cobre y todas las soldaduras son inferiores.
+Se entrega un archivo combinado de taladros en milimetros.
+
+Los cuatro puentes W1-W4 son ALAMBRES AISLADOS por arriba.
+Taladro 0,6 mm, conductor 0,35-0,45 mm; pads de 1 mm.
+Senales de 0,5 mm, alimentacion 0,7 mm, reserva RF 0,8 mm.
+Solo el modulo LoRa es SMD y se suelda en B.Cu; resto THT.
+Usar zocalos hembra de al menos 8 mm para el ESP32.
+J4 y JP2 NO MONTAR con la antena de resorte actual.
+Retirar JP1 antes de conectar USB al ESP32.
+
+Ver documentacion/PCB_Impresion_1a1.pdf para transferencia:
+100 %, sin ajuste; comprobar la regla de 100 mm.
+Validacion software: DRC 0, conexiones pendientes 0, paridad esquema 0.
+Falta validar el hardware mediante mediciones y ensayo del prototipo.

@@ -1,0 +1,83 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-05T21:35:47",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "EmisorASV.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [/LORA_DIO2] of U4 on B.Cu",
+                    "pos": {
+                        "x": 39.785,
+                        "y": 56.84
+                    },
+                    "uuid": "3e583962-eeab-4c1f-9926-d2a51f5a0f8f"
+                },
+                {
+                    "description": "PTH pad 8 [/LORA_DIO2] of U3",
+                    "pos": {
+                        "x": 71.3,
+                        "y": 65.92
+                    },
+                    "uuid": "b181e688-6430-4864-85f3-7875601088e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [/LORA_DIO1] of U4 on B.Cu",
+                    "pos": {
+                        "x": 39.785,
+                        "y": 55.57
+                    },
+                    "uuid": "83d3087e-d110-428b-99da-f557a677d1e3"
+                },
+                {
+                    "description": "PTH pad 9 [/LORA_DIO1] of U3",
+                    "pos": {
+                        "x": 71.3,
+                        "y": 68.46
+                    },
+                    "uuid": "2840d69a-dbe4-49b4-90f4-705291432fb3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

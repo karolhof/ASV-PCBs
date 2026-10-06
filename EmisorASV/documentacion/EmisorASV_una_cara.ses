@@ -1,0 +1,285 @@
+(session EmisorASV_una_cara
+  (base_design EmisorASV_una_cara)
+  (placement
+    (resolution um 10)
+    (component MountingHole_3.2mm_M3
+      (place H4 1100000 -950000 front 0)
+      (place H3 250000 -950000 front 0)
+      (place H2 1100000 -250000 front 0)
+      (place H1 250000 -250000 front 0)
+    )
+    (component Capacitor_THT:CP_Radial_D5.0mm_P2.00mm
+      (place C8 490000 -586000 front 90)
+    )
+    (component Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm
+      (place C7 440000 -586000 front 90)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+      (place JP2 242370 -500000 front 180)
+    )
+    (component Connector_Coaxial:SMA_Amphenol_132134_Vertical
+      (place J4 310000 -340000 front 0)
+    )
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+      (place R2 560000 -750000 front 90)
+      (place R1 490000 -750000 front 90)
+    )
+    (component Capacitor_THT:CP_Radial_D5.0mm_P2.00mm::1
+      (place C6 565400 -370000 front 180)
+      (place C4 660000 -930000 front 180)
+    )
+    (component Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm::1
+      (place C5 590800 -500000 front 180)
+    )
+    (component "Package_TO_SOT_THT:TO-220-3_Vertical"
+      (place U2 540000 -460000 front 0)
+    )
+    (component ASV_Emisor:XL1278_SMT_16P_16.5x17mm_P1.27mm
+      (place U4 320000 -620000 back 0)
+    )
+    (component "ASV_Emisor:ESPRESSIF_ESP32-DEVKITC-32UE"
+      (place U3 840000 -710000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 10.0.6)
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_600:300_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /GND
+        (wire
+          (path B.Cu 7000
+            545400 -374555
+            545400 -373695
+            542211 -370505
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            542211 -370505
+            556864 -355852
+            778257 -355852
+            885530 -463125
+            913197 -463125
+            931472 -481400
+            967000 -481400
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            335400 -314600
+            361298 -340498
+            500049 -340498
+            511270 -351719
+            523424 -351719
+            542211 -370505
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            397850 -543000
+            333827 -543000
+            321127 -555700
+            242370 -555700
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            640000 -930000
+            640000 -884600
+            713000 -811600
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            545400 -412300
+            382300 -412300
+            335400 -365400
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            490000 -566000
+            470000 -566000
+            440000 -536000
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            967000 -633800
+            890800 -633800
+            713000 -811600
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            540800 -480400
+            495600 -480400
+            440000 -536000
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            284600 -365400
+            284600 -314600
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            284600 -314600
+            335400 -314600
+          )
+        )
+      )
+      (net /LORA_3V3
+        (wire
+          (path B.Cu 7000
+            560000 -750000
+            490000 -750000
+          )
+        )
+        (wire
+          (path B.Cu 7000
+            565400 -460000
+            565400 -510600
+            490000 -586000
+          )
+        )
+      )
+      (net /LORA_DIO0
+        (wire
+          (path B.Cu 5000
+            713000 -710000
+            725891 -722891
+            725891 -740229
+            718020 -748100
+            661889 -748100
+            574812 -661023
+            528866 -661023
+            503007 -686882
+            484486 -686882
+            454904 -657300
+            397850 -657300
+          )
+        )
+      )
+      (net /LORA_DIO1
+        (wire
+          (path B.Cu 5000
+            713000 -684600
+            733147 -704747
+            733147 -758405
+            718235 -773317
+            421157 -773317
+            364062 -716222
+            364062 -579919
+            388281 -555700
+            397850 -555700
+          )
+        )
+      )
+      (net /LORA_MISO
+        (wire
+          (path B.Cu 5000
+            397850 -606500
+            490982 -606500
+            552582 -544900
+            754044 -544900
+            804844 -494100
+            972672 -494100
+            986750 -508178
+            986750 -683216
+            972681 -697285
+            961457 -697285
+            953592 -689420
+            953592 -672608
+            967000 -659200
+          )
+        )
+      )
+      (net /LORA_MOSI
+        (wire
+          (path B.Cu 5000
+            397850 -619200
+            489388 -619200
+            538288 -570300
+            903500 -570300
+            967000 -506800
+          )
+        )
+      )
+      (net /LORA_NSS
+        (wire
+          (path B.Cu 5000
+            713000 -735400
+            631406 -653806
+            509994 -653806
+            490000 -673800
+          )
+        )
+        (wire
+          (path B.Cu 5000
+            397850 -644600
+            460800 -644600
+            490000 -673800
+          )
+        )
+      )
+      (net /LORA_RESET
+        (wire
+          (path B.Cu 5000
+            560000 -673800
+            539686 -694114
+            477908 -694114
+            453794 -670000
+            397850 -670000
+          )
+        )
+        (wire
+          (path B.Cu 5000
+            713000 -760800
+            647000 -760800
+            560000 -673800
+          )
+        )
+      )
+      (net /LORA_SCK
+        (wire
+          (path B.Cu 5000
+            397850 -631900
+            583341 -631900
+            594141 -621100
+            972173 -621100
+            979517 -628444
+            979517 -672083
+            967000 -684600
+          )
+        )
+      )
+    )
+  )
+)

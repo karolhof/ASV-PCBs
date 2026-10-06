@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "ASV_Emisor") (type "KiCad") (uri "${KIPRJMOD}/ASV_Emisor.pretty") (options "") (descr "Huellas de referencia: verificar antes de fabricar")))

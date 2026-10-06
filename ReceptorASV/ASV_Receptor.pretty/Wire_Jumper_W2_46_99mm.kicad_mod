@@ -1,0 +1,100 @@
+(footprint "Wire_Jumper_W2_46_99mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "W2"
+		(at 0 0 0)
+		(layer "Dwgs.User")
+		(uuid "2bb4c073-5880-465b-bb0c-293a83955da8")
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+	)
+	(property "Value" "ALAMBRE AISLADO"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "acc92551-faef-402e-a69d-43c2e94c1c7d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b84c9af8-f5ba-441a-89d2-4d8617344ec4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f56834be-8400-46d5-9f13-e1a25fe7b420")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole board_only exclude_from_pos_files)
+	(duplicate_pad_numbers_are_jumpers yes)
+	(fp_line
+		(start -22.63915 -6.2821)
+		(end 22.63915 6.2821)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "ff7785af-07de-4f92-b2d9-bf0cbab99ee5")
+	)
+	(fp_circle
+		(center -22.63915 -6.2821)
+		(end -21.98915 -6.2821)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "dac69db7-428c-45d8-8feb-cfb02ebf67a5")
+	)
+	(fp_circle
+		(center 22.63915 6.2821)
+		(end 23.28915 6.2821)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "4f402cb9-8ee2-4e56-b2a9-ef7f13cca3c8")
+	)
+	(pad "1" thru_hole circle
+		(at -22.63915 -6.2821)
+		(size 1 1)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "490e36e9-bf76-4718-b8c6-f5477772a12e")
+	)
+	(pad "1" thru_hole circle
+		(at 22.63915 6.2821)
+		(size 1 1)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "27b7fda3-6f27-4353-8afa-e78e85e6c3d8")
+	)
+	(embedded_fonts no)
+)

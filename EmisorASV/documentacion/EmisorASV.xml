@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV.kicad_sch</source>
+    <date>2026-10-05T21:29:49</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>ASV - Emisor LoRa 433 MHz</title>
+        <company>UCC - ASV</company>
+        <rev>A</rev>
+        <date>2026-10-05</date>
+        <source>EmisorASV.kicad_sch</source>
+        <comment number="1" value="USB del celular / ESP32 DevKit / LoRa"/>
+        <comment number="2" value="ESP: huella del ZIP. Solo LoRa SMD; resto THT"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C4">
+      <value>47u / 25 V</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>98002f94-e9b6-4293-b0d4-2bcb43d7c185</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>100n / 50 V</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33716894-5804-481e-aaaa-f4242f45c724</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>22u / 25 V</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dce547c9-f167-4519-85be-9d49b816c1c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>100n / 50 V</value>
+      <footprint>Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1136183c-9232-4dfe-b595-905f2bd37bf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>10u / 25 V</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10fbf3a2-daad-4352-9852-665d13d598c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>SMA FUTURO - NO MONTAR</value>
+      <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
+      <property name="ki_fp_filters" value="*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45e361de-c6a1-47ed-9882-6ac0c30f14ed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JP2">
+      <value>ABIERTO con resorte</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <property name="ki_fp_filters" value="Jumper* TestPoint*2Pads* TestPoint*Bridge*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2d17eb6-7eec-42c7-961d-fca6b972298c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6e229767-7872-4750-b3f2-29520e28df8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</footprint>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9509f87-f69c-42cd-a7ef-10b1c3f747dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>LD1117V33 / 3,3 V LoRa</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/ld1117.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/ld1117.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ASV_Emisor" part="LD1117V33_TO220" description=""/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed49dc46-2ed1-4bae-b244-b850429c05c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>ESP32-DEVKITC-32UE</value>
+      <footprint>ASV_Emisor:ESPRESSIF_ESP32-DEVKITC-32UE</footprint>
+      <fields>
+        <field name="Footprint">ASV_Emisor:ESPRESSIF_ESP32-DEVKITC-32UE</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ASV_Emisor" part="ESP32_DEVKITC_32UE" description=""/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c844b75b-3329-4947-90b2-06eb0f74d0ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="29"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="14"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="26"/>
+            <pin num="28"/>
+            <pin num="21"/>
+            <pin num="27"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="25"/>
+            <pin num="22"/>
+            <pin num="30"/>
+            <pin num="31"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>LoRa SX1278 / 433 MHz</value>
+      <footprint>ASV_Emisor:XL1278_SMT_16P_16.5x17mm_P1.27mm</footprint>
+      <fields>
+        <field name="Footprint">ASV_Emisor:XL1278_SMT_16P_16.5x17mm_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="ASV_Emisor" part="XL1278_SMT_433_VERIFICAR" description=""/>
+      <property name="Sheetname" value="EmisorASV"/>
+      <property name="Sheetfile" value="EmisorASV.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ac493032-de46-4ccf-913c-3fa43e5624eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="16"/>
+            <pin num="4"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="1"/>
+            <pin num="12"/>
+            <pin num="15"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="ASV_Emisor" part="ESP32_DEVKITC_32UE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32_DEVKITC_32UE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_out"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="GPIO36" type="input"/>
+        <pin num="4" name="GPIO39" type="input"/>
+        <pin num="5" name="GPIO34" type="input"/>
+        <pin num="6" name="GPIO35" type="input"/>
+        <pin num="7" name="GPIO32" type="bidirectional"/>
+        <pin num="8" name="33_/_DIO2" type="bidirectional"/>
+        <pin num="9" name="25_/_DIO1" type="bidirectional"/>
+        <pin num="10" name="26_/_DIO0" type="bidirectional"/>
+        <pin num="11" name="27_/_NSS" type="bidirectional"/>
+        <pin num="12" name="14_/_RESET" type="bidirectional"/>
+        <pin num="13" name="GPIO12" type="bidirectional"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="GPIO13" type="bidirectional"/>
+        <pin num="16" name="SD2" type="bidirectional"/>
+        <pin num="17" name="SD3" type="bidirectional"/>
+        <pin num="18" name="CMD" type="bidirectional"/>
+        <pin num="19" name="5V" type="power_in"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="23_/_MOSI" type="bidirectional"/>
+        <pin num="22" name="22_/_RX1" type="bidirectional"/>
+        <pin num="23" name="TX0" type="bidirectional"/>
+        <pin num="24" name="RX0" type="bidirectional"/>
+        <pin num="25" name="21_/_TX1" type="bidirectional"/>
+        <pin num="26" name="GND" type="power_in"/>
+        <pin num="27" name="19_/_MISO" type="bidirectional"/>
+        <pin num="28" name="18_/_SCK" type="bidirectional"/>
+        <pin num="29" name="GPIO5" type="bidirectional"/>
+        <pin num="30" name="17_/_TX2" type="bidirectional"/>
+        <pin num="31" name="16_/_RX2" type="bidirectional"/>
+        <pin num="32" name="GPIO4" type="bidirectional"/>
+        <pin num="33" name="GPIO0" type="bidirectional"/>
+        <pin num="34" name="GPIO2" type="bidirectional"/>
+        <pin num="35" name="GPIO15" type="bidirectional"/>
+        <pin num="36" name="SD1" type="bidirectional"/>
+        <pin num="37" name="SD0" type="bidirectional"/>
+        <pin num="38" name="CLK" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="ASV_Emisor" part="LD1117V33_TO220">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LD1117V33_TO220</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="OUT" type="power_out"/>
+        <pin num="3" name="IN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="ASV_Emisor" part="XL1278_SMT_433_VERIFICAR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XL1278_SMT_433_VERIFICAR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="DIO1" type="bidirectional"/>
+        <pin num="3" name="DIO2" type="bidirectional"/>
+        <pin num="4" name="DIO3" type="bidirectional"/>
+        <pin num="5" name="VCC_3V3" type="power_in"/>
+        <pin num="6" name="MISO" type="output"/>
+        <pin num="7" name="MOSI" type="input"/>
+        <pin num="8" name="SCK" type="input"/>
+        <pin num="9" name="NSS" type="input"/>
+        <pin num="10" name="DIO0" type="bidirectional"/>
+        <pin num="11" name="RESET" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="DIO4" type="bidirectional"/>
+        <pin num="14" name="DIO5" type="bidirectional"/>
+        <pin num="15" name="GND_RF" type="power_in"/>
+        <pin num="16" name="ANT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_Coaxial">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</description>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+        <fp>*LEMO*</fp>
+        <fp>*UMRF*</fp>
+        <fp>*MCX*</fp>
+        <fp>*U.FL*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_Coaxial</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Open">
+      <description>Jumper, 2-pole, open</description>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Open</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Jumper, 2-pole, open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="ASV_Emisor">
+      <uri>${KIPRJMOD}/ASV_Emisor.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>${KICAD10_SYMBOL_DIR}/Jumper.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/GND" class="Default">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Ext_2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U3" pin="14" pinfunction="GND_14" pintype="power_in"/>
+      <node ref="U3" pin="20" pinfunction="GND_20" pintype="power_in"/>
+      <node ref="U3" pin="26" pinfunction="GND_26" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U4" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U4" pin="15" pinfunction="GND_RF_15" pintype="power_in"/>
+    </net>
+    <net code="2" name="/LORA_3V3" class="Default">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="OUT_2" pintype="power_out"/>
+      <node ref="U4" pin="5" pinfunction="VCC_3V3_5" pintype="power_in"/>
+    </net>
+    <net code="3" name="/LORA_DIO0" class="Default">
+      <node ref="U3" pin="10" pinfunction="26_/_DIO0_10" pintype="bidirectional"/>
+      <node ref="U4" pin="10" pinfunction="DIO0_10" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/LORA_DIO1" class="Default">
+      <node ref="U3" pin="9" pinfunction="25_/_DIO1_9" pintype="bidirectional"/>
+      <node ref="U4" pin="2" pinfunction="DIO1_2" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/LORA_DIO2" class="Default">
+      <node ref="U3" pin="8" pinfunction="33_/_DIO2_8" pintype="bidirectional"/>
+      <node ref="U4" pin="3" pinfunction="DIO2_3" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/LORA_MISO" class="Default">
+      <node ref="U3" pin="27" pinfunction="19_/_MISO_27" pintype="bidirectional"/>
+      <node ref="U4" pin="6" pinfunction="MISO_6" pintype="output"/>
+    </net>
+    <net code="7" name="/LORA_MOSI" class="Default">
+      <node ref="U3" pin="21" pinfunction="23_/_MOSI_21" pintype="bidirectional"/>
+      <node ref="U4" pin="7" pinfunction="MOSI_7" pintype="input"/>
+    </net>
+    <net code="8" name="/LORA_NSS" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="27_/_NSS_11" pintype="bidirectional"/>
+      <node ref="U4" pin="9" pinfunction="NSS_9" pintype="input"/>
+    </net>
+    <net code="9" name="/LORA_RESET" class="Default">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="14_/_RESET_12" pintype="bidirectional"/>
+      <node ref="U4" pin="11" pinfunction="RESET_11" pintype="input"/>
+    </net>
+    <net code="10" name="/LORA_SCK" class="Default">
+      <node ref="U3" pin="28" pinfunction="18_/_SCK_28" pintype="bidirectional"/>
+      <node ref="U4" pin="8" pinfunction="SCK_8" pintype="input"/>
+    </net>
+    <net code="11" name="/RF_433" class="Default">
+      <node ref="JP2" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U4" pin="16" pinfunction="ANT_16" pintype="passive"/>
+    </net>
+    <net code="12" name="/RF_SMA" class="Default">
+      <node ref="J4" pin="1" pinfunction="In_1" pintype="passive"/>
+      <node ref="JP2" pin="2" pinfunction="B_2" pintype="passive"/>
+    </net>
+    <net code="13" name="/SYS_5V" class="Default">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="IN_3" pintype="power_in"/>
+      <node ref="U3" pin="19" pinfunction="5V_19" pintype="power_in"/>
+    </net>
+    <net code="14" name="unconnected-(U3-3V3-Pad1)" class="Default">
+      <node ref="U3" pin="1" pinfunction="3V3_1" pintype="power_out+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U3-16_{slash}_RX2-Pad31)" class="Default">
+      <node ref="U3" pin="31" pinfunction="16_/_RX2_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U3-17_{slash}_TX2-Pad30)" class="Default">
+      <node ref="U3" pin="30" pinfunction="17_/_TX2_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U3-21_{slash}_TX1-Pad25)" class="Default">
+      <node ref="U3" pin="25" pinfunction="21_/_TX1_25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U3-22_{slash}_RX1-Pad22)" class="Default">
+      <node ref="U3" pin="22" pinfunction="22_/_RX1_22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(U3-CLK-Pad38)" class="Default">
+      <node ref="U3" pin="38" pinfunction="CLK_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(U3-CMD-Pad18)" class="Default">
+      <node ref="U3" pin="18" pinfunction="CMD_18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U3-EN-Pad2)" class="Default">
+      <node ref="U3" pin="2" pinfunction="EN_2" pintype="input+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U3-GPIO0-Pad33)" class="Default">
+      <node ref="U3" pin="33" pinfunction="GPIO0_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U3-GPIO2-Pad34)" class="Default">
+      <node ref="U3" pin="34" pinfunction="GPIO2_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(U3-GPIO4-Pad32)" class="Default">
+      <node ref="U3" pin="32" pinfunction="GPIO4_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U3-GPIO5-Pad29)" class="Default">
+      <node ref="U3" pin="29" pinfunction="GPIO5_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U3-GPIO12-Pad13)" class="Default">
+      <node ref="U3" pin="13" pinfunction="GPIO12_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U3-GPIO13-Pad15)" class="Default">
+      <node ref="U3" pin="15" pinfunction="GPIO13_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U3-GPIO15-Pad35)" class="Default">
+      <node ref="U3" pin="35" pinfunction="GPIO15_35" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U3-GPIO32-Pad7)" class="Default">
+      <node ref="U3" pin="7" pinfunction="GPIO32_7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U3-GPIO34-Pad5)" class="Default">
+      <node ref="U3" pin="5" pinfunction="GPIO34_5" pintype="input+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U3-GPIO35-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="GPIO35_6" pintype="input+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U3-GPIO36-Pad3)" class="Default">
+      <node ref="U3" pin="3" pinfunction="GPIO36_3" pintype="input+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U3-GPIO39-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="GPIO39_4" pintype="input+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U3-RX0-Pad24)" class="Default">
+      <node ref="U3" pin="24" pinfunction="RX0_24" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(U3-SD0-Pad37)" class="Default">
+      <node ref="U3" pin="37" pinfunction="SD0_37" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U3-SD1-Pad36)" class="Default">
+      <node ref="U3" pin="36" pinfunction="SD1_36" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U3-SD2-Pad16)" class="Default">
+      <node ref="U3" pin="16" pinfunction="SD2_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U3-SD3-Pad17)" class="Default">
+      <node ref="U3" pin="17" pinfunction="SD3_17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U3-TX0-Pad23)" class="Default">
+      <node ref="U3" pin="23" pinfunction="TX0_23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U4-DIO3-Pad4)" class="Default">
+      <node ref="U4" pin="4" pinfunction="DIO3_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U4-DIO4-Pad13)" class="Default">
+      <node ref="U4" pin="13" pinfunction="DIO4_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U4-DIO5-Pad14)" class="Default">
+      <node ref="U4" pin="14" pinfunction="DIO5_14" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

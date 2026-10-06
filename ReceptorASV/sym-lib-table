@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "ASV_Receptor") (type "KiCad") (uri "${KIPRJMOD}/ASV_Receptor.kicad_sym") (options "") (descr "Simbolos locales receptor ASV")))

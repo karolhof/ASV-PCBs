@@ -1,0 +1,8 @@
+Revision E - KiCad 10.0.6
+ERC: 0 errores, 0 advertencias (ver ERC.rpt).
+75 conexiones verificadas en netlist; todas siguen conectadas al eliminar etiquetas.
+23 referencias fisicas: U4 SMD y las otras 22 THT. UART directos, sin R3-R6.
+Huella ESP32 identica byte a byte a la provista en ZIP; 38 nombres/numeros de pin cotejados.
+LD1117V33: 1 GND, 2 OUT, 3 IN.
+LoRa: 16 pads SMD; paso principal 1,27 mm; sin solapes; separacion minima de cobre 0.37 mm.
+La comprobacion geometrica no valida el ajuste contra el modulo fisico.
