@@ -195,6 +195,7 @@
       "38": 0.0
     },
     "nets": {
+      "1": "LORA_3V3",
       "19": "SYS_5V",
       "14": "GND",
       "20": "GND",
@@ -211,7 +212,6 @@
       "22": "NC",
       "30": "NC",
       "31": "NC",
-      "1": "NC",
       "2": "NC",
       "3": "NC",
       "4": "NC",
@@ -343,34 +343,6 @@
     "value": "LoRa SX1278 / 433 MHz",
     "footprint": "ASV_Emisor:XL1278_SMT_16P_16.5x17mm_P1.27mm"
   },
-  "U2": {
-    "pins": {
-      "3": [
-        325.12,
-        43.18
-      ],
-      "2": [
-        355.6,
-        43.18
-      ],
-      "1": [
-        340.36,
-        57.15
-      ]
-    },
-    "angles": {
-      "3": 0.0,
-      "2": 180.0,
-      "1": 90.0
-    },
-    "nets": {
-      "3": "SYS_5V",
-      "2": "LORA_3V3",
-      "1": "GND"
-    },
-    "value": "LD1117V33 / 3,3 V LoRa",
-    "footprint": "Package_TO_SOT_THT:TO-220-3_Vertical"
-  },
   "C4": {
     "pins": {
       "1": [
@@ -391,50 +363,6 @@
       "2": "GND"
     },
     "value": "47u / 25 V",
-    "footprint": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-  },
-  "C5": {
-    "pins": {
-      "1": [
-        317.5,
-        59.69
-      ],
-      "2": [
-        317.5,
-        67.31
-      ]
-    },
-    "angles": {
-      "1": 270.0,
-      "2": 90.0
-    },
-    "nets": {
-      "1": "SYS_5V",
-      "2": "GND"
-    },
-    "value": "100n / 50 V",
-    "footprint": "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-  },
-  "C6": {
-    "pins": {
-      "1": [
-        375.92,
-        59.69
-      ],
-      "2": [
-        375.92,
-        67.31
-      ]
-    },
-    "angles": {
-      "1": 270.0,
-      "2": 90.0
-    },
-    "nets": {
-      "1": "LORA_3V3",
-      "2": "GND"
-    },
-    "value": "22u / 25 V",
     "footprint": "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
   },
   "R1": {

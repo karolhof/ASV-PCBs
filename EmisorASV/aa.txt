@@ -1,0 +1,13 @@
+Info: X scale constrained.
+Info: Y scale constrained.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-F_Cu.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-B_Cu.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-F_Paste.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-B_Paste.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-F_Silkscreen.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-B_Silkscreen.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-F_Mask.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-B_Mask.gbr'.
+Plotted to '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-Edge_Cuts.gbr'.
+Created Gerber job file '/Users/agustinmiranda/Documents/UCC/INVESTIGACION ASV/ASV-PCBs/EmisorASV/EmisorASV_Vista_puentes-job.gbrjob'.
+Info: Done.

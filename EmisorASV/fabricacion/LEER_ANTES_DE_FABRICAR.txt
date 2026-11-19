@@ -17,3 +17,8 @@ NO aplicar bateria de 12 V; no hay entrada de bateria.
 PDF de impresion: 100 %, sin ajuste; comprobar regla de 100 mm.
 Validacion software: ERC/DRC 0; conexiones y paridad de esquema 0.
 Falta medir tensiones y probar transmision en el prototipo.
+
+REVISION SIN U2 - 17/11/2026
+U2, C5 y C6 eliminados. LoRa desde 3V3 de U3 (pad 1).
+C7 y C8 permanecen junto al radio. Sin nuevos puentes.
+Comprobar tension de 3,3 V bajo transmision en el prototipo.

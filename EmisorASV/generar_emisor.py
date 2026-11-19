@@ -140,15 +140,15 @@ note('EMISOR ASV - ESP32 + LoRa 433 MHz',15.24,12.7,2.54)
 note('USB del celular al DevKit. Solo LoRa SMD; resto THT.',15.24,20.32,1.524)
 put(esp,'U3','ESP32-DEVKITC-32UE',101.6,171.45,foot='ASV_Emisor:ESPRESSIF_ESP32-DEVKITC-32UE',props=[(66.04,106.68),(66.04,110.49)])
 put(lora,'U4','LoRa SX1278 / 433 MHz',269.24,157.48,foot='ASV_Emisor:XL1278_SMT_16P_16.5x17mm_P1.27mm',props=[(301,107.95),(301,111.76)])
-put(ldo,'U2','LD1117V33 / 3,3 V LoRa',340.36,45.72,foot='Package_TO_SOT_THT:TO-220-3_Vertical',datasheet='https://www.st.com/resource/en/datasheet/ld1117.pdf',props=[(348,30.48),(348,34.29)])
-for ref,x,key,value,foot in [('C4',292.1,'Device:C_Polarized','47u / 25 V',CAP),('C5',317.5,'Device:C','100n / 50 V',CER),('C6',375.92,'Device:C_Polarized','22u / 25 V',CAP)]:
+route(pp('U3',1),(50.8,pp('U3',1)[1]),(50.8,95.25));mark('U3',1,'LORA_3V3')
+for ref,x,key,value,foot in [('C4',292.1,'Device:C_Polarized','47u / 25 V',CAP)]:
  put(key,ref,value,x,63.5,foot=foot)
-route(pp('U3',19),(101.6,43.18),pp('U2',3));mark('U3',19,'SYS_5V');mark('U2',3,'SYS_5V');label('SYS_5V',(210.82,43.18))
-for ref in ['C4','C5']:tap(ref,1,'SYS_5V',(pp(ref,1)[0],43.18))
-route(pp('U2',2),(398.78,43.18),(398.78,95.25),(180.34,95.25));mark('U2',2,'LORA_3V3')
-tap('C6',1,'LORA_3V3',(375.92,43.18));tap('U4',5,'LORA_3V3',(269.24,95.25));label('LORA_3V3',(360.68,95.25))
+route(pp('U3',19),(101.6,43.18),(292.1,43.18));mark('U3',19,'SYS_5V');label('SYS_5V',(210.82,43.18))
+for ref in ['C4']:tap(ref,1,'SYS_5V',(pp(ref,1)[0],43.18))
+route((50.8,95.25),(381,95.25))
+tap('U4',5,'LORA_3V3',(269.24,95.25));label('LORA_3V3',(360.68,95.25))
 label('GND',(91.44,248.92));route((91.44,248.92),(393.7,248.92));route((393.7,83.82),(393.7,248.92));route((292.1,83.82),(393.7,83.82))
-for ref,pin in [('U2',1),('C4',2),('C5',2),('C6',2)]:tap(ref,pin,'GND',(pp(ref,pin)[0],83.82))
+for ref,pin in [('C4',2)]:tap(ref,pin,'GND',(pp(ref,pin)[0],83.82))
 for pin in [14,20,26]:tap('U3',pin,'GND',(pp('U3',pin)[0],248.92))
 for (ep,_),(lp,name,_),y in zip(sig_order,loras,spi_y):link('U3',ep,'U4',lp,'LORA_'+name);label('LORA_'+name,(137.16,y))
 for ref,x,signal,y in [('R1',180.34,'NSS',spi_y[3]),('R2',205.74,'RESET',spi_y[4])]:
@@ -167,7 +167,7 @@ for ref,x,key,value,foot in [('C7',355.6,'Device:C','100n / 50 V',CER),('C8',381
 for ref,x,y,net in [('#FLG01',137.16,248.92,'GND'),('#FLG02',160.02,43.18,'SYS_5V')]:
  put('power:PWR_FLAG',ref,'PWR_FLAG',x,y,props=[(x,y-8),(x,y-3.81)]);mark(ref,1,net)
 note('USB DEL DEVKIT = ENTRADA DE ALIMENTACION 5 V',154.94,30.48,1.524)
-note('El celular debe funcionar como host USB OTG y suministrar energia.\nNo aplicar 12 V ni tension de bateria al DevKit. Sin borneras UART.\nR1/R2: pull-ups NSS y RESET. C5/C6 junto a U2; C7/C8 junto al radio.\nAntena actual: resorte. No montar J4/JP2; ANT no va a GND.\nPunto = union; cruce sin punto = cables separados.',25.4,261.62,1.27)
+note('El celular debe funcionar como host USB OTG y suministrar energia.\nNo aplicar 12 V ni tension de bateria al DevKit. Sin borneras UART.\nR1/R2: pull-ups NSS y RESET. LoRa desde 3V3 del DevKit; C7/C8 junto al radio.\nAntena actual: resorte. No montar J4/JP2; ANT no va a GND.\nPunto = union; cruce sin punto = cables separados.',25.4,261.62,1.27)
 # Split conductors at branch endpoints, add explicit junctions only where conductors join.
 ends={p for seg in segments for p in seg}
 ends.update(p for inst in instances.values() for p in inst['pins'].values())
@@ -187,7 +187,7 @@ for p,d in deg.items():
 for p1,p2 in sorted(edges):
  elements.append(f'(wire (pts (xy {p1[0]} {p1[1]}) (xy {p2[0]} {p2[1]})) (stroke (width 0.2032) (type default)) (uuid {q(u())}))')
 # Serialize self-contained schematic and local symbol library.
-header=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(root)}) (paper "A3") (title_block (title "ASV - Emisor LoRa 433 MHz") (date "2026-10-05") (rev "A") (company "UCC - ASV") (comment 1 "USB del celular / ESP32 DevKit / LoRa") (comment 2 "ESP: huella del ZIP. Solo LoRa SMD; resto THT"))'
+header=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(root)}) (paper "A3") (title_block (title "ASV - Emisor LoRa 433 MHz") (date "2026-11-17") (rev "B") (company "UCC - ASV") (comment 1 "USB del celular / ESP32 DevKit / LoRa") (comment 2 "ESP: huella del ZIP. Solo LoRa SMD; resto THT"))'
 (BASE/'EmisorASV.kicad_sch').write_text(header+'\n(lib_symbols\n'+'\n'.join(dump(s) for s in libs.values())+')\n'+'\n'.join(elements)+f'\n(sheet_instances (path "/" (page "1")))\n)\n')
 (BASE/'ASV_Emisor.kicad_sym').write_text('(kicad_symbol_lib (version 20241209) (generator "kicad_symbol_editor")\n'+'\n'.join(dump(s) for s in custom.values())+'\n)')
 (BASE/'sym-lib-table').write_text('(sym_lib_table (version 7) (lib (name "ASV_Emisor") (type "KiCad") (uri "${KIPRJMOD}/ASV_Emisor.kicad_sym") (options "") (descr "Simbolos locales receptor ASV")))\n')

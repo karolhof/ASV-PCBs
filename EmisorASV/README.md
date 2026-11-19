@@ -17,9 +17,7 @@ Esquema con cables continuos y PCB de una cara. El ESP32 se conecta al LoRa por 
 
 ## Alimentación y montaje
 
-USB alimenta el ESP32; su pin 5V lleva esa alimentación a U2, LD1117V33 TO-220, que genera 3,3 V exclusivamente para el LoRa. Pinout U2: 1 GND, 2 OUT, 3 IN; la aleta es OUT. No conectar el 3V3 del DevKit a LORA_3V3. No conectar batería de 12 V a este emisor.
 
-C4 47 µF junto al pin 5V del ESP32. C5 100 nF junto a IN/GND de U2. C6 22 µF junto a OUT/GND de U2. C7 100 nF y C8 10 µF junto al LoRa, con pistas y retornos locales cortos. Todo THT salvo el módulo LoRa, montado por debajo.
 
 Antena actual de resorte: J4 y JP2 sin montar. ANT del módulo es pad 16, separado de GND. La ruta SMA es una reserva que requiere validación RF antes de usar antena externa.
 
@@ -46,7 +44,14 @@ R1/R2 de 10 kΩ mantienen NSS/RESET en alto al arrancar. Los pads LoRa 4, 13, 14
 ## Fuentes
 
 - [Espressif DevKitC V4: USB, alimentación y pines](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html).
-- [ST LD1117: pinout y capacitor de estabilidad](https://www.st.com/resource/en/datasheet/ld1117.pdf).
 - ZIP del ESP32 y fotos del módulo aportados por el usuario; huella LoRa confirmada en esta conversación.
 
 Las comprobaciones de software no sustituyen las mediciones de 5 V/3,3 V y el ensayo de transmisión del prototipo. Los scripts de generación sobrescriben colocación y esquema; conservar el diseño final antes de ejecutarlos.
+
+## Revisión del 17/11/2026: alimentación directa de 3V3
+
+**U2, C5 y C6 retirados del esquema y de la PCB.** El pin 3V3 de U3 (pad 1) alimenta LORA_3V3: LoRa y pull-ups. C7 de 100 nF y C8 de 10 µF siguen junto al LoRa con conexiones cortas de alimentación y retorno. C4 permanece junto a 5V del ESP32.
+
+No se modifican los GPIO, borneras ni antena. El emisor sigue alimentándose por USB; el receptor conserva entrada de batería, buck de 5V y JP1. Retirar JP1 antes de USB en el receptor. La capacidad de corriente del regulador del DevKit real debe comprobarse durante transmisión; el hardware todavía no fue ensayado.
+
+Los scripts de ruteo intermedio y reportes de revisiones con regulador están archivados en `referencias/proceso_con_U2/`. El archivo principal `.kicad_pcb` es la PCB vigente.

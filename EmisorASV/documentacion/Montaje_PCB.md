@@ -18,14 +18,11 @@ Conductor **aislado de 0,35–0,45 mm**; taladros 0,6 mm. Cortar inicialmente un
 ## Desacople y reserva de energía
 
 - **C4:** 47 µF junto al 5V del ESP32.
-- **C5:** 100 nF junto a entrada y GND del LD1117, ramas de aproximadamente 4 mm.
-- **C6:** 22 µF junto a salida y GND del LD1117, ramas de aproximadamente 9 mm.
 - **C7:** 100 nF junto a VCC del LoRa, rama de aproximadamente 4,3 mm y retorno local.
 - **C8:** 10 µF junto a C7, reserva local durante transmisión.
 
 Los recorridos locales de estos capacitores se fijaron antes del ruteo y se comprobaron después. Ninguno depende de puentes de alambre. El plano GND inferior y las pistas de masa conectan todas las tierras sin islas eléctricamente separadas.
 
-USB del DevKit es la única alimentación de uso. El celular debe actuar como host OTG y suministrar energía suficiente: falta ensayarlo con su teléfono/cable reales. U2 recibe SYS_5V y entrega LORA_3V3 exclusivamente al radio. No unir LORA_3V3 al 3V3 del DevKit. No aplicar 12 V.
 
 J4 y JP2 sin montar para la antena de resorte. ANT pad 16 no va a GND. Para futuro SMA, quitar el resorte, montar J4/JP2 y validar RF antes de usarlo.
 
@@ -36,3 +33,7 @@ El PDF `PCB_Impresion_1a1.pdf` incluye guía superior con taladros y cobre norma
 ERC: 0 errores y 0 advertencias. DRC: 0 violaciones, 0 conexiones pendientes, 0 diferencias con el esquema. El verificador también comprueba el pinout contra el receptor, las conexiones por cables sin etiquetas, montaje THT/SMD, huella original ESP32 y pistas locales de capacitores.
 
 El hardware aún debe ensayarse: cortos, 5V/3V3, arranque desde USB OTG y transmisión LoRa. Los scripts de generación sobrescriben el diseño; no ejecutarlos sobre modificaciones manuales sin respaldo.
+
+## Alimentación sin regulador adicional
+
+U2, C5 y C6 eliminados. U3 pad 1 (3V3) alimenta el LoRa y sus pull-ups. C7 (100 nF) y C8 (10 µF) permanecen junto al radio con conexiones locales cortas de alimentación y masa; sin nuevos puentes. Comprobar tensión de 3,3 V y estabilidad durante transmisión con el DevKit real.
